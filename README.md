@@ -1,8 +1,4 @@
-cloudformation-templates
-
-AWS CloudFormation templates for common tasks.
-vpc.yaml
-
-Create a functional VPC with three subnets, available to the public internet.
-
-aws cloudformation create-stack --stack-name test-vpc --template-body fileb:///<path-to-folder>/vpc.yaml
+cloudformation-templates which contains a vpc with three subnets and the following: 
+·         A security group for the VPC.
+·         An S3 bucket with a randomly generated name and an ACL that denies access to anyone except for the owner.
+·         Inside the VPC should be an EC2-instance with these specifications:
